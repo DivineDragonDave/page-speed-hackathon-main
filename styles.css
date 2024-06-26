@@ -52,8 +52,10 @@ nav ul li a:hover {
   background-color: #f4f4f4;
   padding: 2rem;
   text-align: center;
-  background-image: url("https://img.freepik.com/free-vector/white-abstract-background_23-2148816647.jpg");
-  background-size: cover;
+  background-image: url("/img/white-abstract-background_23-2148816647.webp");
+  background-size: 100%;
+  object-fit: cover;
+  background-repeat: no-repeat;
 }
 
 .large-image {

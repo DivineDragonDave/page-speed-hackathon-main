@@ -3,54 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Macs amazing blog posts</title>
+    <title>Mac's Amazing Blog Posts</title>
 
     <link rel="preload" href="styles.css" as="style" />
     <link rel="preload" href="scripts.js" as="script" />
     <link rel="preload" href="./img/mac.webp" as="image" />
+    <!-- <link rel="preload" href="./img/happy-mac.webp" as="image" /> -->
 
-    <!-- Asynkron och deferred laddning av skript -->
+    <!-- Deferred loading of script -->
     <script defer src="./scripts.js"></script>
     <link rel="stylesheet" href="styles.css" />
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        fetch("https://dummyjson.com/posts?limit=500")
-          .then((response) => response.json())
-          .then((data) => {
-            console.log("%cPOSTS", "color: red;");
-            console.log(data);
-          });
-
-        fetch("https://dummyjson.com/users")
-          .then((response) => response.json())
-          .then((data) => {
-            console.log("%cUSERS", "background: #222; color: #bada55");
-            console.log(data);
-          });
-
-        fetch("https://dummyjson.com/comments")
-          .then((response) => response.json())
-          .then((data) => {
-            console.log("%cCOMMENTS", "background: #222; color: #d23a8b");
-            console.log(data);
-          });
-      });
-    </script>
   </head>
 
   <body class="body">
     <nav class="navbar">
       <ul>
-        <li>
-          <a href="#hero">Hero</a>
-        </li>
+        <li><a href="#hero">Hero</a></li>
         <li><a href="#posts">Posts</a></li>
       </ul>
     </nav>
 
     <section id="hero">
-      <h1>Welcome to My Amazing Blog posts</h1>
+      <h1>Welcome to My Amazing Blog Posts</h1>
       <p>Your daily dose of awesome articles</p>
       <img
         src="./img/mac.webp"
@@ -76,6 +50,8 @@
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       ></iframe>
     </section>
+
+    <section id="posts" class="posts"></section>
 
     <footer class="footer">
       <p class="centerText">© 2024 My Blog. All rights reserved.</p>
