@@ -1,0 +1,98 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  padding-top: 50px;
+}
+
+nav {
+  background-color: #333;
+  padding: 1rem 0px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+}
+
+.image-box {
+  display: flex;
+}
+
+#hero {
+  background-color: #f4f4f4;
+  padding: 2rem;
+  text-align: center;
+  background-image: url("https://img.freepik.com/free-vector/white-abstract-background_23-2148816647.jpg");
+  background-size: cover;
+}
+
+.large-image {
+  width: 49%;
+  height: auto;
+}
+
+.posts {
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: start;
+  justify-content: center;
+}
+
+.loader {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+.post {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1rem;
+  width: 300px;
+}
+
+.post h2 {
+  color: #333;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.avatar-image {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}

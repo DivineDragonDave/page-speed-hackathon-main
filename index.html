@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Macs amazing blog posts</title>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "https://dummyjson.com/posts?limit=500", false);
+        xhr.send(null);
+
+        if (xhr.status === 200) {
+          console.log("%cPOSTS", "color: red;");
+          console.log(xhr.responseText);
+        }
+
+        xhr.open("GET", "https://dummyjson.com/users", false);
+        xhr.send(null);
+
+        if (xhr.status === 200) {
+          console.log("%cUSERS", "background: #222; color: #bada55");
+          console.log(xhr.responseText);
+        }
+
+        xhr.open("GET", "https://dummyjson.com/comments", false);
+        xhr.send(null);
+
+        if (xhr.status === 200) {
+          console.log("%cCOMMENTS", "background: #222; color: #d23a8b");
+          console.log(xhr.responseText);
+        }
+      });
+    </script>
+
+    <script src="./scripts.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body class="body">
+    <nav class="navbar">
+      <ul>
+        <li>
+          <a href="#hero"> Hero </a>
+        </li>
+        <li><a href="#post"> Posts </a></li>
+      </ul>
+    </nav>
+
+    <section id="hero">
+      <h1>Welcome to My Amazing Blog posts</h1>
+      <p>Your daily dose of awesome articles</p>
+      <img
+        src="./img/mac.webp"
+        loading="lazy"
+        alt="Large image"
+        class="large-image"
+      />
+      <img
+        src="./img/mac.webp"
+        loading="lazy"
+        alt="Large image"
+        class="large-image"
+      />
+
+      <iframe
+        src="https://www.youtube-nocookie.com/embed/IeH00LdQhBE?si=Y0eCsLVoiLHcQvk4"
+        width="100%"
+        height="auto"
+        frameborder="0"
+        loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      ></iframe>
+    </section>
+
+    <footer class="footer">
+      <p class="centerText">© 2024 My Blog. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
