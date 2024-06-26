@@ -1,6 +1,6 @@
 function run() {
   document.addEventListener("DOMContentLoaded", function () {
-    fetch("https://dummyjson.com/posts?limit=500")
+    fetch("https://dummyjson.com/posts?limit=800")
       .then((response) => response.json())
       .then((data) => {
         displayPosts(data.posts);

@@ -1,4 +1,10 @@
 /* styles.css */
+
+html {
+  scroll-behavior: smooth;
+  scroll-margin-top: 40px;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
